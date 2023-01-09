@@ -23,7 +23,7 @@ char[] newStr = string.Join("", arr).ToCharArray();
 int count = 0;
 for(int i=0;i<newStr.Length;i++)
 {
-    if (newStr[i]==searchChar)
+    if (newStr[i].ToString().ToLower()==searchChar.ToString().ToLower())
     {
         count++;
     }
