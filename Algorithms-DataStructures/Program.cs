@@ -40,12 +40,17 @@ char[] newStr = string.Join("", arr).ToCharArray();
 int count = 0;
 for(int i=0;i<newStr.Length;i++)
 {
-    if (newStr[i].ToString().ToLower()==searchChar.ToString().ToLower())
+    if (char.ToLower(newStr[i]) ==char.ToLower(searchChar))
     {
         count++;
     }
 }
- 
-double ratio = Math.Round((double)count/(double)newStr.Length, 2) * 100;
 
-Console.WriteLine($"The letter ‘{searchChar}’ appears {count} times in the array. This letter makes up more than {ratio}% of the total number of characters.");
+Console.WriteLine($"The letter ‘{searchChar}’ appears {count} times in the array.");
+
+double ratio = Math.Round((double)count / (double)newStr.Length, 2) * 100;
+if(ratio>25)
+{
+    Console.WriteLine($"This letter makes up more than 25% of the total number of characters.");
+
+}
