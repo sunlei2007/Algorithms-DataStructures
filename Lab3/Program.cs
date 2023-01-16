@@ -74,3 +74,4 @@ foreach (var item in intResult3)
 {
     Console.Write(item + "，");
 }
+
