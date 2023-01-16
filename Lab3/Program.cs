@@ -18,12 +18,8 @@ foreach (var item in intArr)
     }
 }
 Console.WriteLine("1.We have a list of integers where elements appear either once or twice:");
-foreach(var item in arrResult)
-{
-    Console.Write(item+ "，");
-}
-
-Console.WriteLine();
+Console.WriteLine(String.Join(",",arrResult.ToArray()));
+  
 
 int[,] intArr2 = new int[,] 
 { {1,2,3,4,2,4 },
@@ -53,11 +49,8 @@ for (int i = 0; i < intArrNew.Length - 1; i++)
 }
 Console.WriteLine("2.We have two sorted int arrays which could be with different sizes. We need to merge them in a third array while keeping this result array sorted. ");
 
-foreach (var item in intArrNew)
-{
-    Console.Write(item + "，");
-}
-Console.WriteLine();
+Console.WriteLine(String.Join(",", intArrNew));
+ 
 
 
 int[] intArr3 = new int[] { 3,4,1,5 };
@@ -70,8 +63,6 @@ for(int i=intArr3.Length-1;i>=0;i--)
 }
 Console.WriteLine("3.Given an integer, reverse the digits of that integer. ");
 
-foreach (var item in intResult3)
-{
-    Console.Write(item + "，");
-}
+Console.WriteLine(String.Join(",", intResult3));
 
+ 
