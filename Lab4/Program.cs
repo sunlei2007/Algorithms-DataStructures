@@ -62,6 +62,24 @@ Console.WriteLine(str);
 // Program 3
 List<int> OrderByLooping(List<int> lst)
 {
-
-    return null;
+    int temp = 0;
+    for (int i = 0; i < lst.Count - 1; i++)
+    {
+        for (int j = i + 1; j < lst.Count; j++)
+        {
+            if (lst[j] < lst[i])
+            {
+                temp = lst[i];
+                lst[i] = lst[j];
+                lst[j] = temp;
+            }
+        }
+    }
+    return lst;
 }
+
+List<int> lstMain3 = new List<int>();
+lstMain3.AddRange(new int[]{ 6, 3, 4, 5 });
+
+List<int>  lstNew3=OrderByLooping(lstMain3);
+Console.WriteLine(String.Join(",",lstNew3));
