@@ -46,7 +46,7 @@ for (int i = 0; i < newStr.Length; i++)
         count++;
     }
 }
-
+///
 Console.WriteLine($"The letter ‘{searchChar}’ appears {count} times in the array.");
 
 double ratio = Math.Round((double)count / (double)newStr.Length, 2) * 100;
