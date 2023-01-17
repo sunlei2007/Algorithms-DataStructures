@@ -25,7 +25,7 @@ for (int i = 0; i < arr.Length; i++)
     arr[i] = inputWord;
 }
 
-//
+////
 Console.WriteLine("Please enter a character:");
 char searchChar = Console.ReadKey().KeyChar;
 while (!char.IsLetter(searchChar))
