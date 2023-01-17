@@ -1,5 +1,4 @@
-﻿Console.WriteLine("Hello, World!");
-Console.WriteLine("Please enter a number:");
+﻿Console.WriteLine("Please enter a number:");
 int arrLength = Int32.Parse(Console.ReadLine());
 
 while (arrLength <= 0)
